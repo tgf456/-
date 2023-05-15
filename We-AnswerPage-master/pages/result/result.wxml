@@ -1,0 +1,8 @@
+<!--pages/result/result.wxml-->
+<view>
+  <view><text>您的分数是：{{ABCD}}分</text></view>
+  <view wx:if="{{ABCD>=90}}">优秀</view>
+  <view wx:if="{{ABCD<90 && ABCD>=80}}">良好</view>
+    <view wx:if="{{ABCD<80 && ABCD>=60}}">一般</view>
+    <view wx:if="{{ABCD<60}}">还得努力</view>
+</view>
